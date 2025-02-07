@@ -1,4 +1,7 @@
-package com.careerit.cj.day2;
+package com.careerit.cj.day2.mathutil;
+
+
+
 
 public class EmiCalculator {
 
@@ -10,14 +13,11 @@ public class EmiCalculator {
         double n = 36;      // n is number of months
         double r = rate / 12 / 100;  // rate of interest per month
         double emi = (p * r * (Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1)));
-
         double totalInterest = emi * n - p;
         double totalAmount = emi * n;
-
         System.out.println("Principal amount : " + p);
         System.out.println("Total interest   : " + Math.round(totalInterest));
         System.out.println("EMI              : " + Math.round(emi));
         System.out.println("Total amount     : " + Math.round(totalAmount));
-
     }
 }
