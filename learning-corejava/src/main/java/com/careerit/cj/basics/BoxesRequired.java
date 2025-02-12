@@ -17,7 +17,6 @@ public class BoxesRequired {
         if (totalItems % boxCapacity != 0) {
             boxes += 1;
         }
-
         System.out.println("The number of boxes required to pack " + totalItems + " items is : " + boxes);
     }
 }
