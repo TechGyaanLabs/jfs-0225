@@ -6,13 +6,13 @@ public class AGeneratePrime {
 
         int[] primeNumbers = generatePrime(20);
 
-        for(int i=0;i<primeNumbers.length;i++) {
+        for (int i = 0; i < primeNumbers.length; i++) {
             System.out.println(primeNumbers[i]);
         }
 
         double[] avgMinMax = getSumAvgMaxAndMin(primeNumbers);
 
-        for(int i=0;i<avgMinMax.length;i++) {
+        for (int i = 0; i < avgMinMax.length; i++) {
             System.out.println(avgMinMax[i]);
         }
 
