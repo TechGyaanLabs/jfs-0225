@@ -7,8 +7,6 @@ public class BasicExample2 {
         String name1 = "Krishna";
         String name2 = "Krishna";
 
-        // =  ==
-
         System.out.println(name1 == name2);
 
         String name3 = new String("Krishna");
