@@ -35,7 +35,6 @@ public class StringExample6 {
         }
 
         String ifsc = "ICICI530545466";
-
         System.out.println(ifsc.substring(0, 5));
         System.out.println(ifsc.substring(ifsc.length() - 4));
 
