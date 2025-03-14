@@ -1,8 +1,5 @@
 package com.careerit.cj.inheritance;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class A {
     A() {
         System.out.println("A");
