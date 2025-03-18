@@ -2,9 +2,9 @@ package com.careerit.cj.inheritance;
 
 public class Account {
 
-    private String accNumber;
-    private String name;
-    private double balance;
+    protected String accNumber;
+    protected String name;
+    protected double balance;
 
     public Account(String accNumber, String name, double balance) {
         this.accNumber = accNumber;
