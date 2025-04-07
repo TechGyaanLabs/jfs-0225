@@ -1,0 +1,51 @@
+invoice:
+  id: INV-2024-001
+  date: 2024-04-07
+  dueDate: 2024-04-14
+  status: Pending
+  currency: INR
+
+  seller:
+    name: G3 Cafe
+    address: 123 Street, Hyderabad, Telangana, India
+    gstNumber: 36ABCDE1234F1Z5
+    phone: +91-9876543210
+    email: billing@g3cafe.in
+
+  buyer:
+    name: Koteswarao
+    address: 45 Residency Rd, Bangalore, Karnataka
+    phone: +91-9123456780
+    email: koteswarao@example.com
+
+  items:
+    - description: Special Butter Milk 350 ml
+      quantity: 2
+      unitPrice: 30.0
+      total: 60.0
+
+    - description: Chole Bhature (Full)
+      quantity: 1
+      unitPrice: 90.0
+      total: 90.0
+
+    - description: Mint Mojito with Ginger
+      quantity: 1
+      unitPrice: 60.0
+      total: 60.0
+
+  summary:
+    subTotal: 210.0
+    tax:
+      rate: 5
+      amount: 10.5
+    discount:
+      description: Festive Offer
+      amount: 10.0
+    total: 210.5
+    amountPaid: 100.0
+    balanceDue: 110.5
+
+  notes: >
+    Thank you for dining with us!
+    Please make the payment by the due date to avoid late fees.

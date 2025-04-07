@@ -9,6 +9,7 @@
     <modules>
         <module>learning-corejava</module>
         <module>iplstats-app</module>
+        <module>working-with-files</module>
     </modules>
 
     <properties>
@@ -52,6 +53,17 @@
                     <artifactId>logback-classic</artifactId>
                     <version>${logback.version}</version>
                 </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>1.13.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>2.3</version>
+            </dependency>
 
         </dependencies>
 

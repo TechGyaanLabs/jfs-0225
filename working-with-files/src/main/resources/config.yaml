@@ -1,0 +1,7 @@
+app:
+  name: G3 Cafe
+  locations:
+    - Hyderabad
+    - Delhi
+    - Mumbai
+  welcome: Welcome to ${app.name}!
