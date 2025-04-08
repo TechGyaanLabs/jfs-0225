@@ -8,7 +8,6 @@ import lombok.Setter;
 public class Summary {
     private double subTotal;
     private Tax tax;
-    private Discount discount;
     private double total;
     private double amountPaid;
     private double balanceDue;

@@ -1,0 +1,126 @@
+2025-04-02 08:34:34 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:34:34 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:34:34 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:34:34 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:36:45 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:36:45 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:36:45 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:36:45 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:36:45 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:38:06 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:38:06 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:38:06 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:38:06 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:38:06 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:38:27 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:38:27 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:38:27 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:38:27 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:38:27 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:38:47 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:38:47 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:38:47 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:38:47 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:38:47 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:39:45 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:39:45 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:39:45 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:39:45 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:39:45 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:39:54 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:39:54 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:39:54 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:39:54 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:39:54 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:40:16 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:40:16 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:40:16 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:40:16 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:40:16 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:40:29 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:40:29 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:40:29 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:40:29 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:40:29 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:40:40 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:40:40 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:40:40 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:40:40 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:40:40 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:41:17 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:41:17 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:41:17 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:41:17 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:41:17 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:41:37 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:41:37 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:41:37 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:41:37 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:41:37 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:41:56 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:41:56 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:41:56 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:41:56 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:41:56 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:42:01 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:42:01 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:42:01 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:42:01 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:42:01 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:42:11 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:42:11 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:42:11 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:42:11 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:42:11 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:42:24 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:42:24 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:42:24 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:42:24 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:42:24 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:54:06 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:54:06 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:54:06 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:54:06 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:54:06 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:54:17 [main] DEBUG c.c.iplstats.LoggingMessageExample - This is debug message
+2025-04-02 08:54:17 [main] INFO  c.c.iplstats.LoggingMessageExample - This is info message
+2025-04-02 08:54:17 [main] WARN  c.c.iplstats.LoggingMessageExample - This is warning message
+2025-04-02 08:54:17 [main] ERROR c.c.iplstats.LoggingMessageExample - This is error message
+2025-04-02 08:54:17 [main] ERROR c.c.iplstats.LoggingMessageExample - Exception occurred: 
+java.lang.ArithmeticException: / by zero
+	at com.careerit.iplstats.LoggingMessageExample.main(LoggingMessageExample.java:14)
+2025-04-02 08:54:22 [main] INFO  c.c.i.service.IplStatsServiceImpl - Total 227 players loaded
