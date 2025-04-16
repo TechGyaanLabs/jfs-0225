@@ -10,6 +10,7 @@
         <module>learning-corejava</module>
         <module>iplstats-app</module>
         <module>working-with-files</module>
+        <module>learning-jdbc</module>
     </modules>
 
     <properties>
@@ -79,6 +80,12 @@
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>fop</artifactId>
                 <version>2.9</version> <!-- Use the latest version -->
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.7.5</version>
             </dependency>
 
     </dependencies>
