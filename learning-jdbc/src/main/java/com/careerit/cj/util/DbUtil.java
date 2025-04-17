@@ -2,80 +2,45 @@ package com.careerit.cj.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.Properties;
 
 public class DbUtil {
+    private static final DbUtil INSTANCE = new DbUtil();
+    private final Properties properties;
 
-    public volatile static DbUtil dbUtil;
-
-    private static Properties properties;
-
-    private DbUtil(){
-    }
-
-    static{
-        try{
-            properties = new Properties();
+    private DbUtil() {
+        properties = new Properties();
+        try {
             properties.load(DbUtil.class.getClassLoader().getResourceAsStream("application.properties"));
-        }catch (Exception e){
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to load database properties", e);
         }
     }
 
-    public static DbUtil getInstance(){
-        if(dbUtil == null){
-            synchronized (DbUtil.class){
-                if(dbUtil == null){
-                    dbUtil = new DbUtil();
-                }
-            }
-        }
-        return dbUtil;
+    public static DbUtil getInstance() {
+        return INSTANCE;
     }
 
-    public Connection getConnection(){
-        Connection con = null;
+    public Connection getConnection() {
         try {
             String url = properties.getProperty("db.url");
             String username = properties.getProperty("db.username");
             String password = properties.getProperty("db.password");
-            con = DriverManager.getConnection(url, username, password);
+            return DriverManager.getConnection(url, username, password);
         } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return con;
-    }
-
-
-    public void close(Statement st, Connection con){
-        if(st != null){
-            try{
-                st.close();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-        }
-        if(con != null){
-            try{
-                con.close();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
+            throw new RuntimeException("Failed to establish database connection", e);
         }
     }
 
-    public void close(ResultSet rs, Statement st, Connection con){
-        if(rs != null){
-            try{
-                rs.close();
-            }catch (Exception e){
-                e.printStackTrace();
+    public void close(AutoCloseable... resources) {
+        for (AutoCloseable resource : resources) {
+            if (resource != null) {
+                try {
+                    resource.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
-        close(st, con);
     }
-
-
 }
