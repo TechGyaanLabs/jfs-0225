@@ -1,0 +1,2017 @@
+{
+  "Java": {
+    "easy": [
+      {
+        "question": "What is the correct syntax to declare a variable in Java?",
+        "options": [
+          "A. var myVariable;",
+          "B. int myVariable;",
+          "C. variable myVariable;",
+          "D. myVariable = int;"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, variables are declared with a specific data type. The correct syntax to declare an integer variable is 'int myVariable;'"
+      },
+      {
+        "question": "Which keyword is used to define a class in Java?",
+        "options": [
+          "A. class",
+          "B. void",
+          "C. define",
+          "D. new"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Java, the 'class' keyword is used to define a class."
+      },
+      {
+        "question": "What is the output of 5 + 3 * 2 in Java?",
+        "options": [
+          "A. 16",
+          "B. 11",
+          "C. 13",
+          "D. 10"
+        ],
+        "correct_answer": "C",
+        "explanation": "In Java, multiplication has a higher precedence than addition. So, 3 * 2 is evaluated first, resulting in 6. Then, 5 + 6 equals 11."
+      },
+      {
+        "question": "Which of the following is a valid Java identifier?",
+        "options": [
+          "A. 123identifier",
+          "B. _myIdentifier",
+          "C. my-identifier",
+          "D. #identifier"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, identifiers can start with a letter, underscore (_), or dollar sign ($) and can be followed by letters, digits, underscores, or dollar signs."
+      },
+      {
+        "question": "What is the default value of an int variable in Java?",
+        "options": [
+          "A. 0",
+          "B. 1",
+          "C. -1",
+          "D. null"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Java, the default value of an int variable is 0."
+      },
+      {
+        "question": "Which Java keyword is used to break out of a loop?",
+        "options": [
+          "A. exit",
+          "B. stop",
+          "C. break",
+          "D. halt"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'break' keyword in Java is used to break out of a loop prematurely."
+      },
+      {
+        "question": "What is the purpose of the 'public' keyword in Java?",
+        "options": [
+          "A. To make a method private",
+          "B. To make a method accessible by any other class",
+          "C. To make a method static",
+          "D. To make a method final"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, the 'public' keyword is an access modifier that allows a method to be accessed by any other class."
+      },
+      {
+        "question": "Which data type is used to store a single character in Java?",
+        "options": [
+          "A. char",
+          "B. string",
+          "C. character",
+          "D. letter"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Java, the 'char' data type is used to store a single character."
+      },
+      {
+        "question": "What is the correct way to create an object of a class in Java?",
+        "options": [
+          "A. MyClass.create();",
+          "B. new MyClass();",
+          "C. create MyClass();",
+          "D. MyClass.new();"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, the 'new' keyword is used to create an object of a class."
+      },
+      {
+        "question": "Which operator is used for logical 'and' in Java?",
+        "options": [
+          "A. &&",
+          "B. ||",
+          "C. &",
+          "D. |"
+        ],
+        "correct_answer": "A",
+        "explanation": "The '&&' operator in Java is used for logical 'and' (conjunction) operations."
+      },
+      {
+        "question": "What is the superclass of all classes in Java?",
+        "options": [
+          "A. Object",
+          "B. Class",
+          "C. Super",
+          "D. Main"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Java, the 'Object' class is the superclass of all classes. Every class in Java is directly or indirectly derived from the Object class."
+      },
+      {
+        "question": "Which keyword is used to refer to the current object in Java?",
+        "options": [
+          "A. self",
+          "B. this",
+          "C. me",
+          "D. current"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, the 'this' keyword is used to refer to the current object."
+      },
+      {
+        "question": "What is the correct way to write a single-line comment in Java?",
+        "options": [
+          "A. //This is a comment",
+          "B. /*This is a comment*/",
+          "C. <!--This is a comment-->",
+          "D. 'This is a comment"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Java, single-line comments are preceded by '//'. Anything following '//' on the same line is considered a comment and is ignored by the compiler."
+      },
+      {
+        "question": "Which of the following is NOT a primitive data type in Java?",
+        "options": [
+          "A. int",
+          "B. boolean",
+          "C. String",
+          "D. char"
+        ],
+        "correct_answer": "C",
+        "explanation": "In Java, 'String' is not a primitive data type. It is a class in Java and not a built-in primitive data type like int, boolean, or char."
+      },
+      {
+        "question": "What is the output of 'Hello' + 'World' in Java?",
+        "options": [
+          "A. HelloWorld",
+          "B. Hello World",
+          "C. Hello+World",
+          "D. Compilation Error"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Java, the '+' operator is used for concatenating strings. So, 'Hello' + 'World' results in 'HelloWorld'."
+      },
+      {
+        "question": "Which keyword is used to prevent a method from being overridden in Java?",
+        "options": [
+          "A. override",
+          "B. final",
+          "C. private",
+          "D. static"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'final' keyword in Java is used to prevent a method from being overridden in a subclass."
+      },
+      {
+        "question": "What is the output of the following code snippet?\nint x = 5;\nSystem.out.println(x++);",
+        "options": [
+          "A. 5",
+          "B. 6",
+          "C. 4",
+          "D. Compilation Error"
+        ],
+        "correct_answer": "A",
+        "explanation": "The post-increment operator (x++) first uses the original value of x (5) and then increments x. So, the output will be 5."
+      },
+      {
+        "question": "Which of the following is a loop in Java?",
+        "options": [
+          "A. for-each",
+          "B. repeat-until",
+          "C. while",
+          "D. select-case"
+        ],
+        "correct_answer": "C",
+        "explanation": "In Java, the 'while' loop is used to repeatedly execute a block of code as long as a given condition is true."
+      },
+      {
+        "question": "What is the correct way to compare two strings for equality in Java?",
+        "options": [
+          "A. str1 == str2",
+          "B. str1.equals(str2)",
+          "C. str1.equalsIgnoreCase(str2)",
+          "D. compare(str1, str2)"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, the '.equals()' method is used to compare the content of two strings for equality. Using '==' will compare the memory reference, not the actual content."
+      },
+      {
+        "question": "Which keyword is used to handle exceptions in Java?",
+        "options": [
+          "A. try",
+          "B. catch",
+          "C. handle",
+          "D. throw"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'try' keyword in Java is used to start a block of code that will be tested for exceptions."
+      }
+    ],
+    "medium": [
+      {
+        "question": "What is the output of the following Java code snippet?\nint x = 5;\nSystem.out.println(x++);",
+        "options": [
+          "A. 5",
+          "B. 6",
+          "C. Compilation Error",
+          "D. Runtime Error"
+        ],
+        "correct_answer": "A",
+        "explanation": "The post-increment operator (x++) first uses the current value of x (5) and then increments it. So, the output will be 5."
+      },
+      {
+        "question": "Which keyword is used to prevent method overriding in Java?",
+        "options": [
+          "A. final",
+          "B. static",
+          "C. abstract",
+          "D. private"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'final' keyword is used to prevent method overriding in Java. When a method is declared as final, it cannot be overridden by subclasses."
+      },
+      {
+        "question": "What is the default value of a boolean variable in Java?",
+        "options": [
+          "A. true",
+          "B. false",
+          "C. null",
+          "D. 0"
+        ],
+        "correct_answer": "B",
+        "explanation": "The default value of a boolean variable in Java is 'false'."
+      },
+      {
+        "question": "Which of the following is not a valid Java identifier?",
+        "options": [
+          "A. _variableName",
+          "B. 1variable",
+          "C. $variableName",
+          "D. variableName"
+        ],
+        "correct_answer": "B",
+        "explanation": "Java identifiers cannot start with a digit. Therefore, '1variable' is not a valid Java identifier."
+      },
+      {
+        "question": "What is the result of '10' + 10 in Java?",
+        "options": [
+          "A. 20",
+          "B. 1010",
+          "C. Compilation Error",
+          "D. Runtime Error"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Java, when a string is concatenated with any other type, the other type is converted to a string. So, '10' + 10 results in '1010'."
+      },
+      {
+        "question": "Which of the following is a valid declaration of a char variable in Java?",
+        "options": [
+          "A. char ch = 'AB';",
+          "B. char ch = 'A';",
+          "C. char ch = \"A\";",
+          "D. char ch = 65;"
+        ],
+        "correct_answer": "B",
+        "explanation": "A char variable in Java can hold only a single character. Therefore, char ch = 'A'; is a valid declaration."
+      },
+      {
+        "question": "What is the output of the following code snippet?\nint x = 10, y = 20;\nSystem.out.println(x > y ? x : y);",
+        "options": [
+          "A. 10",
+          "B. 20",
+          "C. Compilation Error",
+          "D. Runtime Error"
+        ],
+        "correct_answer": "B",
+        "explanation": "The ternary operator (?:) checks the condition x > y. Since this condition is false, it returns the value of y which is 20."
+      },
+      {
+        "question": "Which of the following is true about Java interfaces?",
+        "options": [
+          "A. Interfaces can contain instance variables.",
+          "B. A class can implement multiple interfaces with conflicting methods.",
+          "C. Interface methods are public and abstract by default.",
+          "D. Interfaces can extend multiple classes."
+        ],
+        "correct_answer": "C",
+        "explanation": "Interface methods are public and abstract by default, and interface cannot contain instance variables. Option B is incorrect because conflicting methods in interfaces lead to compilation errors."
+      },
+      {
+        "question": "What is the purpose of the 'super' keyword in Java?",
+        "options": [
+          "A. To call the superclass constructor.",
+          "B. To access the superclass method.",
+          "C. To refer to the current class instance.",
+          "D. To create a new object."
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'super' keyword is used to access the superclass methods or constructors in Java. It is often used to differentiate between superclass and subclass methods."
+      },
+      {
+        "question": "Which of the following is true about Java packages?",
+        "options": [
+          "A. A package can contain only classes.",
+          "B. All classes in a package must be public.",
+          "C. Package statement must be the first statement in a Java source file.",
+          "D. A class can belong to multiple packages."
+        ],
+        "correct_answer": "C",
+        "explanation": "The package statement must be the first statement in a Java source file. It specifies the package to which the classes in the file belong."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\nint arr[] = new int[5];\nSystem.out.println(arr[3]);",
+        "options": [
+          "A. 0",
+          "B. null",
+          "C. Compilation Error",
+          "D. Runtime Error"
+        ],
+        "correct_answer": "A",
+        "explanation": "For integer arrays in Java, the default initial value is 0. Therefore, arr[3] will output 0."
+      },
+      {
+        "question": "Which of the following statements is correct about Java constructors?",
+        "options": [
+          "A. Constructors can have a return type.",
+          "B. Constructors can be inherited.",
+          "C. Constructors can be final.",
+          "D. Constructors can be static."
+        ],
+        "correct_answer": "B",
+        "explanation": "Constructors are not inherited in Java. Each class must define its own constructors. Option A is incorrect because constructors do not have a return type."
+      },
+      {
+        "question": "What is the correct way to declare a constant in Java?",
+        "options": [
+          "A. final int CONSTANT_VALUE = 10;",
+          "B. const int CONSTANT_VALUE = 10;",
+          "C. static final int CONSTANT_VALUE = 10;",
+          "D. final static int CONSTANT_VALUE = 10;"
+        ],
+        "correct_answer": "C",
+        "explanation": "In Java, constants are declared using the 'final' keyword. The 'static' keyword is used to make the constant accessible without creating an instance of the class."
+      },
+      {
+        "question": "Which of the following is true about method overloading in Java?",
+        "options": [
+          "A. Methods must have different return types to be overloaded.",
+          "B. Overloaded methods must have the same method name.",
+          "C. Overloading is not possible in Java.",
+          "D. Overloaded methods must have different access modifiers."
+        ],
+        "correct_answer": "B",
+        "explanation": "Method overloading in Java allows a class to have multiple methods with the same name but different parameters. The return type alone is not sufficient to distinguish overloaded methods."
+      },
+      {
+        "question": "What is the correct way to create an object of a class in Java?",
+        "options": [
+          "A. MyClass obj = new obj();",
+          "B. new MyClass();",
+          "C. obj = new MyClass();",
+          "D. obj = new obj();"
+        ],
+        "correct_answer": "B",
+        "explanation": "The correct syntax to create an object of a class in Java is 'new ClassName();'. Option A is incorrect because the class name must be used to create an object."
+      },
+      {
+        "question": "Which of the following is not a valid Java primitive data type?",
+        "options": [
+          "A. int",
+          "B. double",
+          "C. boolean",
+          "D. string"
+        ],
+        "correct_answer": "D",
+        "explanation": "In Java, 'string' is not a valid primitive data type. The correct reference type for text is 'String'."
+      },
+      {
+        "question": "What is the purpose of the 'break' statement in Java?",
+        "options": [
+          "A. To exit the loop.",
+          "B. To skip the current iteration.",
+          "C. To jump to a specific label.",
+          "D. To continue the loop."
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'break' statement in Java is used to exit a loop or a switch statement. It terminates the current loop or switch statement and transfers control to the statement immediately following the loop or switch."
+      },
+      {
+        "question": "Which of the following is true about Java arrays?",
+        "options": [
+          "A. Arrays can store elements of different data types.",
+          "B. Arrays in Java are dynamic in size.",
+          "C. Arrays are objects in Java.",
+          "D. Arrays can be resized after initialization."
+        ],
+        "correct_answer": "C",
+        "explanation": "In Java, arrays are objects. They can store elements of the same data type and have a fixed size that cannot be changed after initialization."
+      },
+      {
+        "question": "What is the output of the following code snippet?\nString str1 = new String(\"Hello\");\nString str2 = new String(\"Hello\");\nSystem.out.println(str1 == str2);",
+        "options": [
+          "A. true",
+          "B. false",
+          "C. Compilation Error",
+          "D. Runtime Error"
+        ],
+        "correct_answer": "B",
+        "explanation": "The == operator in Java compares the references of objects. Since str1 and str2 are different objects in memory, the output will be false."
+      },
+      {
+        "question": "Which of the following is true about Java inheritance?",
+        "options": [
+          "A. A class can inherit from multiple classes.",
+          "B. Private members of the superclass are accessible in the subclass.",
+          "C. In Java, all classes inherit from the Object class.",
+          "D. Inheritance in Java is achieved using the 'implements' keyword."
+        ],
+        "correct_answer": "C",
+        "explanation": "In Java, all classes implicitly inherit from the Object class. This means that every class in Java is a subclass of Object either directly or indirectly."
+      }
+    ],
+    "hard": [
+      {
+        "question": "What is a checked exception in Java?",
+        "options": [
+          "A. An exception that is checked at compile time",
+          "B. An exception that is checked at runtime",
+          "C. An exception that is checked by the programmer",
+          "D. An exception that is checked by the JVM"
+        ],
+        "correct_answer": "A",
+        "explanation": "A checked exception is an exception that is checked at compile time, meaning the compiler ensures that the exception is caught or declared to be thrown."
+      },
+      {
+        "question": "Which keyword is used to prevent a method from being overridden in Java?",
+        "options": [
+          "A. override",
+          "B. final",
+          "C. static",
+          "D. sealed"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'final' keyword is used to prevent a method from being overridden in Java. Once a method is marked as final, it cannot be overridden by subclasses."
+      },
+      {
+        "question": "What is the purpose of the 'transient' keyword in Java?",
+        "options": [
+          "A. It indicates that a variable is initialized with a default value",
+          "B. It specifies that a method cannot be overridden",
+          "C. It marks a variable not to be serialized",
+          "D. It allows a class to be cloned"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'transient' keyword in Java marks a variable not to be serialized when it is persisted to a file or transferred over the network."
+      },
+      {
+        "question": "What is the result of 7 % -3 in Java?",
+        "options": [
+          "A. 1",
+          "B. -2",
+          "C. 2",
+          "D. -1"
+        ],
+        "correct_answer": "D",
+        "explanation": "The result of the modulo operation (7 % -3) in Java is -1. The sign of the result is the same as the sign of the dividend (7 in this case)."
+      },
+      {
+        "question": "Which collection class allows null values in Java?",
+        "options": [
+          "A. HashSet",
+          "B. TreeMap",
+          "C. ArrayDeque",
+          "D. LinkedList"
+        ],
+        "correct_answer": "A",
+        "explanation": "HashSet allows null values in Java. Null values are allowed in HashSet as it permits a single null value."
+      },
+      {
+        "question": "What does the 'super' keyword refer to in Java?",
+        "options": [
+          "A. Refers to the currently executing method",
+          "B. Refers to the parent class object",
+          "C. Refers to the subclass object",
+          "D. Refers to the base class method"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'super' keyword in Java is used to refer to the parent class object. It is used to access methods, variables, and constructors of the parent class."
+      },
+      {
+        "question": "What is the output of the following code snippet?\nint x = 5;\nSystem.out.println(x++ + ++x);",
+        "options": [
+          "A. 11",
+          "B. 12",
+          "C. 13",
+          "D. 14"
+        ],
+        "correct_answer": "C",
+        "explanation": "The output of the code snippet is 13. The value of x is first incremented to 6 with x++ and then to 7 with ++x. The sum of 6 and 7 is 13."
+      },
+      {
+        "question": "Which of the following is true about the 'volatile' keyword in Java?",
+        "options": [
+          "A. It ensures a variable is initialized before it is read",
+          "B. It prevents a variable from being modified by multiple threads",
+          "C. It guarantees visibility of changes to variables across threads",
+          "D. It enforces a variable to be constant"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'volatile' keyword in Java guarantees visibility of changes to variables across threads. It ensures that changes made by one thread to shared data are visible to other threads."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\nString str1 = \"Hello\";\nString str2 = str1;\nstr1 += \" World\";\nSystem.out.println(str1 == str2);",
+        "options": [
+          "A. true",
+          "B. false",
+          "C. compilation error",
+          "D. runtime exception"
+        ],
+        "correct_answer": "B",
+        "explanation": "The output will be false. In Java, strings are immutable, so when str1 is concatenated with ' World', a new string object is created. str2 still references the original string 'Hello'."
+      },
+      {
+        "question": "Which of the following is not a valid access modifier for a top-level class in Java?",
+        "options": [
+          "A. private",
+          "B. public",
+          "C. protected",
+          "D. package-private"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'private' access modifier is not valid for a top-level class in Java. Top-level classes can only have 'public' or default (package-private) access modifiers."
+      },
+      {
+        "question": "What is the return type of the 'main' method in Java?",
+        "options": [
+          "A. void",
+          "B. int",
+          "C. String",
+          "D. double"
+        ],
+        "correct_answer": "A",
+        "explanation": "The return type of the 'main' method in Java is void. The main method is the entry point of a Java program and does not return any value."
+      },
+      {
+        "question": "What is the purpose of the 'this' keyword in Java?",
+        "options": [
+          "A. Refers to the superclass object",
+          "B. Refers to the current class object",
+          "C. Refers to the previous class object",
+          "D. Refers to the subclass object"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'this' keyword in Java refers to the current class object. It is used to differentiate between instance variables and parameters with the same name."
+      },
+      {
+        "question": "Which of the following statements is true about Java interfaces?",
+        "options": [
+          "A. Interfaces can have method implementations",
+          "B. A class can implement multiple interfaces with conflicting methods",
+          "C. Interfaces can have constructors",
+          "D. Interface methods are public and abstract by default"
+        ],
+        "correct_answer": "D",
+        "explanation": "Interface methods are public and abstract by default in Java. Interfaces cannot have method implementations but can have default and static methods since Java 8."
+      },
+      {
+        "question": "What is the correct way to declare a constant in Java?",
+        "options": [
+          "A. final String constantValue = \"CONSTANT\";",
+          "B. static final constantValue = \"CONSTANT\";",
+          "C. final constantValue = \"CONSTANT\";",
+          "D. const constantValue = \"CONSTANT\";"
+        ],
+        "correct_answer": "A",
+        "explanation": "The correct way to declare a constant in Java is by using the 'final' keyword. Variables declared with 'final' cannot be reassigned, making them constants."
+      },
+      {
+        "question": "What is the output of the following code snippet?\nint[][] arr = {{1, 2}, {3, 4}};\nSystem.out.println(arr[1][1]);",
+        "options": [
+          "A. 1",
+          "B. 2",
+          "C. 3",
+          "D. 4"
+        ],
+        "correct_answer": "D",
+        "explanation": "The output will be 4. The code snippet initializes a 2D array 'arr', and arr[1][1] accesses the element at the second row and second column, which is 4."
+      },
+      {
+        "question": "How is a Java constructor different from a method?",
+        "options": [
+          "A. Constructors can have a return type while methods cannot",
+          "B. Constructors are called explicitly while methods are called implicitly",
+          "C. Constructors have the same name as the class while methods do not",
+          "D. Constructors can be overloaded while methods cannot"
+        ],
+        "correct_answer": "C",
+        "explanation": "A Java constructor has the same name as the class and is called when an object of that class is created. Methods have different names and are called explicitly to perform a certain operation."
+      },
+      {
+        "question": "Which of the following statements about Java generics is true?",
+        "options": [
+          "A. Generics allow primitive data types to be used as type arguments",
+          "B. Generics are checked at runtime for type safety",
+          "C. Generic classes can extend non-generic classes",
+          "D. Generics provide compile-time type safety"
+        ],
+        "correct_answer": "D",
+        "explanation": "Generics provide compile-time type safety in Java. They allow classes, interfaces, and methods to be parameterized by the type of data they store or operate on."
+      },
+      {
+        "question": "What is the behavior of the 'break' statement in a switch-case block?",
+        "options": [
+          "A. Exits the switch block and continues with the next case",
+          "B. Exits the entire switch block",
+          "C. Skips the current case and moves to the default case",
+          "D. Jumps to the case specified after the break statement"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'break' statement in a switch-case block exits the entire switch block. It is used to terminate the switch statement and continue executing the code after the switch block."
+      },
+      {
+        "question": "What is the purpose of the 'instanceof' operator in Java?",
+        "options": [
+          "A. Checks if an object is null",
+          "B. Checks if an object is of a particular class or interface type",
+          "C. Checks if two objects are equal in memory address",
+          "D. Checks if an object is serializable"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'instanceof' operator in Java is used to check if an object is of a particular class or interface type. It returns true if the object is an instance of the specified class or interface."
+      },
+      {
+        "question": "Which of the following statements is true about abstract classes in Java?",
+        "options": [
+          "A. Abstract classes can be instantiated",
+          "B. Abstract classes cannot have constructors",
+          "C. Abstract classes can be final",
+          "D. Abstract classes can have both abstract and concrete methods"
+        ],
+        "correct_answer": "D",
+        "explanation": "Abstract classes in Java can have both abstract (unimplemented) and concrete (implemented) methods. They cannot be instantiated but can be subclassed."
+      }
+    ]
+  },
+  "SQL": {
+    "easy": [
+      {
+        "question": "What does SQL stand for?",
+        "options": [
+          "A. Structured Query Language",
+          "B. Simple Query Language",
+          "C. Standard Query Language",
+          "D. System Query Language"
+        ],
+        "correct_answer": "A",
+        "explanation": "SQL stands for Structured Query Language, which is used to communicate with and manipulate databases."
+      },
+      {
+        "question": "Which SQL keyword is used to retrieve data from a database?",
+        "options": [
+          "A. SELECT",
+          "B. UPDATE",
+          "C. DELETE",
+          "D. INSERT"
+        ],
+        "correct_answer": "A",
+        "explanation": "The SELECT keyword is used in SQL to retrieve data from a database."
+      },
+      {
+        "question": "Which SQL clause is used to filter records in a SELECT statement?",
+        "options": [
+          "A. WHERE",
+          "B. FROM",
+          "C. ORDER BY",
+          "D. GROUP BY"
+        ],
+        "correct_answer": "A",
+        "explanation": "The WHERE clause is used to specify a condition while fetching data from a database in SQL."
+      },
+      {
+        "question": "Which SQL command is used to insert new records into a table?",
+        "options": [
+          "A. INSERT INTO",
+          "B. ADD RECORD",
+          "C. CREATE NEW",
+          "D. UPDATE TABLE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The INSERT INTO command is used to insert new records into a table in SQL."
+      },
+      {
+        "question": "Which SQL statement is used to delete records from a database table?",
+        "options": [
+          "A. DELETE",
+          "B. DROP",
+          "C. REMOVE",
+          "D. ERASE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The DELETE statement is used to remove records from a table in a database."
+      },
+      {
+        "question": "In SQL, which keyword is used to sort the result set in ascending order?",
+        "options": [
+          "A. ASC",
+          "B. DESC",
+          "C. SORT",
+          "D. ORDER"
+        ],
+        "correct_answer": "A",
+        "explanation": "The ASC keyword is used in SQL to sort the result set in ascending order."
+      },
+      {
+        "question": "Which SQL function is used to count the number of rows returned in a query?",
+        "options": [
+          "A. COUNT",
+          "B. SUM",
+          "C. AVG",
+          "D. MAX"
+        ],
+        "correct_answer": "A",
+        "explanation": "The COUNT function in SQL is used to count the number of rows returned by a query."
+      },
+      {
+        "question": "Which SQL operator is used to combine multiple conditions in a WHERE clause?",
+        "options": [
+          "A. AND",
+          "B. OR",
+          "C. NOT",
+          "D. XOR"
+        ],
+        "correct_answer": "A",
+        "explanation": "The AND operator is used in SQL to combine multiple conditions in a WHERE clause to narrow down the result set."
+      },
+      {
+        "question": "Which SQL statement is used to update existing records in a table?",
+        "options": [
+          "A. UPDATE",
+          "B. MODIFY",
+          "C. CHANGE",
+          "D. ALTER"
+        ],
+        "correct_answer": "A",
+        "explanation": "The UPDATE statement is used to modify existing records in a table in SQL."
+      },
+      {
+        "question": "Which SQL clause is used to group rows based on a column?",
+        "options": [
+          "A. GROUP BY",
+          "B. ORDER BY",
+          "C. HAVING",
+          "D. WHERE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The GROUP BY clause in SQL is used to group rows based on the values of a specified column."
+      },
+      {
+        "question": "Which SQL command is used to create a new database?",
+        "options": [
+          "A. CREATE DATABASE",
+          "B. NEW DATABASE",
+          "C. ADD DATABASE",
+          "D. MAKE DATABASE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The CREATE DATABASE command is used to create a new database in SQL."
+      },
+      {
+        "question": "In SQL, which statement is used to make changes to the structure of a table?",
+        "options": [
+          "A. ALTER TABLE",
+          "B. CHANGE TABLE",
+          "C. MODIFY TABLE",
+          "D. ADJUST TABLE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The ALTER TABLE statement in SQL is used to make changes to the structure of a table."
+      },
+      {
+        "question": "Which SQL keyword is used to retrieve unique records from a table?",
+        "options": [
+          "A. DISTINCT",
+          "B. UNIQUE",
+          "C. SINGLE",
+          "D. ONLY"
+        ],
+        "correct_answer": "A",
+        "explanation": "The DISTINCT keyword in SQL is used to retrieve unique records from a table."
+      },
+      {
+        "question": "Which SQL function is used to find the highest value in a column?",
+        "options": [
+          "A. MAX",
+          "B. MIN",
+          "C. AVG",
+          "D. SUM"
+        ],
+        "correct_answer": "A",
+        "explanation": "The MAX function in SQL is used to find the highest value in a specified column."
+      },
+      {
+        "question": "In SQL, which keyword is used to join two or more tables?",
+        "options": [
+          "A. JOIN",
+          "B. CONNECT",
+          "C. MERGE",
+          "D. LINK"
+        ],
+        "correct_answer": "A",
+        "explanation": "The JOIN keyword is used in SQL to combine rows from two or more tables based on a related column between them."
+      },
+      {
+        "question": "Which SQL function is used to calculate the average value of a column?",
+        "options": [
+          "A. AVG",
+          "B. SUM",
+          "C. MAX",
+          "D. MIN"
+        ],
+        "correct_answer": "A",
+        "explanation": "The AVG function in SQL is used to calculate the average value of a specified column."
+      },
+      {
+        "question": "Which SQL command is used to remove a table from the database?",
+        "options": [
+          "A. DROP TABLE",
+          "B. DELETE TABLE",
+          "C. REMOVE TABLE",
+          "D. ERASE TABLE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The DROP TABLE command is used to delete a table and all its data from the database."
+      },
+      {
+        "question": "In SQL, which clause is used to specify the order of the result set?",
+        "options": [
+          "A. ORDER BY",
+          "B. SORT BY",
+          "C. GROUP BY",
+          "D. ARRANGE BY"
+        ],
+        "correct_answer": "A",
+        "explanation": "The ORDER BY clause in SQL is used to sort the result set based on one or more columns in ascending or descending order."
+      },
+      {
+        "question": "Which SQL statement is used to add a new column to an existing table?",
+        "options": [
+          "A. ALTER TABLE",
+          "B. ADD COLUMN",
+          "C. INSERT COLUMN",
+          "D. MODIFY TABLE"
+        ],
+        "correct_answer": "B",
+        "explanation": "The ADD COLUMN statement in SQL is used to add a new column to an existing table."
+      },
+      {
+        "question": "Which SQL function is used to find the total sum of values in a column?",
+        "options": [
+          "A. SUM",
+          "B. AVG",
+          "C. MAX",
+          "D. MIN"
+        ],
+        "correct_answer": "A",
+        "explanation": "The SUM function in SQL is used to calculate the total sum of all values in a specified column."
+      }
+    ],
+    "medium": [
+      {
+        "question": "Which SQL keyword is used to retrieve data from a database?",
+        "options": [
+          "GET",
+          "FETCH",
+          "SELECT",
+          "RETRIEVE"
+        ],
+        "correct_answer": "C",
+        "explanation": "The SELECT keyword is used to retrieve data from a database in SQL."
+      },
+      {
+        "question": "What does SQL stand for?",
+        "options": [
+          "Structured Query Language",
+          "Sequential Query Language",
+          "Standardized Query Language",
+          "Structural Query Language"
+        ],
+        "correct_answer": "A",
+        "explanation": "SQL stands for Structured Query Language, which is used to communicate with and manipulate databases."
+      },
+      {
+        "question": "Which SQL clause is used to filter records based on a specified condition?",
+        "options": [
+          "GROUP BY",
+          "ORDER BY",
+          "FILTER BY",
+          "WHERE"
+        ],
+        "correct_answer": "D",
+        "explanation": "The WHERE clause is used to filter records based on a specified condition in SQL queries."
+      },
+      {
+        "question": "What is the purpose of the SQL ORDER BY clause?",
+        "options": [
+          "To filter records based on a condition",
+          "To group records based on a column",
+          "To sort records in ascending or descending order",
+          "To limit the number of records returned"
+        ],
+        "correct_answer": "C",
+        "explanation": "The ORDER BY clause is used to sort records in a result set either in ascending or descending order based on specified columns."
+      },
+      {
+        "question": "In SQL, which aggregate function returns the average value of a numeric column?",
+        "options": [
+          "SUM",
+          "COUNT",
+          "AVERAGE",
+          "AVG"
+        ],
+        "correct_answer": "D",
+        "explanation": "The AVG function in SQL returns the average value of a numeric column in a result set."
+      },
+      {
+        "question": "What is the purpose of the SQL DISTINCT keyword?",
+        "options": [
+          "To delete duplicate records",
+          "To filter records based on a condition",
+          "To select unique values from a column",
+          "To join multiple tables"
+        ],
+        "correct_answer": "C",
+        "explanation": "The DISTINCT keyword is used to select unique values from a column in SQL, eliminating duplicates."
+      },
+      {
+        "question": "Which SQL operator is used to combine multiple conditions in a WHERE clause?",
+        "options": [
+          "AND",
+          "OR",
+          "NOT",
+          "LIKE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The AND operator in SQL is used to combine multiple conditions in a WHERE clause, where all conditions must be true for the record to be included."
+      },
+      {
+        "question": "What is the purpose of the SQL GROUP BY clause?",
+        "options": [
+          "To filter records based on a condition",
+          "To sort records in ascending order",
+          "To group records based on a column",
+          "To limit the number of records returned"
+        ],
+        "correct_answer": "C",
+        "explanation": "The GROUP BY clause in SQL is used to group rows that have the same values into summary rows, typically used with aggregate functions."
+      },
+      {
+        "question": "Which SQL statement is used to modify data in a database?",
+        "options": [
+          "INSERT",
+          "SELECT",
+          "UPDATE",
+          "DELETE"
+        ],
+        "correct_answer": "C",
+        "explanation": "The UPDATE statement is used to modify data in a database by updating existing records."
+      },
+      {
+        "question": "What does the SQL keyword JOIN do?",
+        "options": [
+          "Filter records based on a condition",
+          "Combine rows from different tables",
+          "Group records based on a column",
+          "Sort records in descending order"
+        ],
+        "correct_answer": "B",
+        "explanation": "The JOIN keyword in SQL is used to combine rows from different tables based on a related column between them."
+      },
+      {
+        "question": "In SQL, which function is used to return the current date and time?",
+        "options": [
+          "NOW()",
+          "GETDATE()",
+          "CURRENT_TIMESTAMP",
+          "DATE()"
+        ],
+        "correct_answer": "C",
+        "explanation": "The CURRENT_TIMESTAMP function in SQL is used to return the current date and time when executed."
+      },
+      {
+        "question": "What is the purpose of the SQL HAVING clause?",
+        "options": [
+          "To filter records based on a condition",
+          "To sort records in descending order",
+          "To group records based on a column",
+          "To filter results of aggregate functions"
+        ],
+        "correct_answer": "D",
+        "explanation": "The HAVING clause in SQL is used to filter the results of aggregate functions applied to grouped rows, similar to the WHERE clause but for grouped data."
+      },
+      {
+        "question": "Which SQL statement is used to remove a table from a database?",
+        "options": [
+          "DROP TABLE",
+          "DELETE TABLE",
+          "REMOVE TABLE",
+          "TRUNCATE TABLE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The DROP TABLE statement in SQL is used to remove a table from a database, along with all its data and structure."
+      },
+      {
+        "question": "In SQL, which clause is used to sort the result set in descending order?",
+        "options": [
+          "ORDER ASC",
+          "SORT DESC",
+          "ORDER BY",
+          "DESC"
+        ],
+        "correct_answer": "D",
+        "explanation": "The DESC keyword is used in SQL to sort the result set in descending order when used with the ORDER BY clause."
+      },
+      {
+        "question": "What is the purpose of the SQL LIMIT clause?",
+        "options": [
+          "To filter records based on a condition",
+          "To limit the number of records returned",
+          "To group records based on a column",
+          "To sort records in ascending order"
+        ],
+        "correct_answer": "B",
+        "explanation": "The LIMIT clause in SQL is used to limit the number of rows returned in a query result set, particularly useful for pagination."
+      },
+      {
+        "question": "Which SQL data type would you use to store a date and time value?",
+        "options": [
+          "VARCHAR",
+          "INT",
+          "DATETIME",
+          "BOOLEAN"
+        ],
+        "correct_answer": "C",
+        "explanation": "The DATETIME data type in SQL is used to store date and time values in a column, allowing for the representation of both date and time components."
+      },
+      {
+        "question": "What is the purpose of the SQL UNION operator?",
+        "options": [
+          "To combine multiple results into a single result set",
+          "To filter records based on a condition",
+          "To group records based on a column",
+          "To join multiple tables"
+        ],
+        "correct_answer": "A",
+        "explanation": "The UNION operator in SQL is used to combine the result sets of two or more SELECT statements into a single result set, eliminating duplicates."
+      },
+      {
+        "question": "In SQL, which clause is used to update data in a table based on a specified condition?",
+        "options": [
+          "FILTER",
+          "SET",
+          "WHERE",
+          "UPDATE"
+        ],
+        "correct_answer": "C",
+        "explanation": "The WHERE clause in an UPDATE statement is used to specify the condition that must be met for the records to be updated in a table."
+      },
+      {
+        "question": "Which SQL function is used to return the number of rows in a table?",
+        "options": [
+          "COUNT(*)",
+          "ROWS()",
+          "NUM_ROWS()",
+          "TOTAL_ROWS()"
+        ],
+        "correct_answer": "A",
+        "explanation": "The COUNT(*) function in SQL is used to return the number of rows in a table, including rows that contain NULL values."
+      },
+      {
+        "question": "What is the purpose of the SQL CASE statement?",
+        "options": [
+          "To filter records based on a condition",
+          "To group records based on a column",
+          "To perform conditional logic in queries",
+          "To join multiple tables"
+        ],
+        "correct_answer": "C",
+        "explanation": "The CASE statement in SQL is used to perform conditional logic by evaluating multiple conditions and returning a result based on the first condition that is true."
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which SQL keyword is used to retrieve unique records from a database table?",
+        "options": [
+          "UNIQUE",
+          "DISTINCT",
+          "SELECT DISTINCT",
+          "UNION"
+        ],
+        "correct_answer": "C",
+        "explanation": "The SELECT DISTINCT statement is used to return only distinct (different) values."
+      },
+      {
+        "question": "In SQL, which JOIN clause returns rows when there is a match in both tables being joined?",
+        "options": [
+          "LEFT JOIN",
+          "RIGHT JOIN",
+          "INNER JOIN",
+          "OUTER JOIN"
+        ],
+        "correct_answer": "C",
+        "explanation": "The INNER JOIN clause selects records that have matching values in both tables."
+      },
+      {
+        "question": "What SQL clause is used to filter records in a SELECT statement?",
+        "options": [
+          "GROUP BY",
+          "HAVING",
+          "WHERE",
+          "ORDER BY"
+        ],
+        "correct_answer": "C",
+        "explanation": "The WHERE clause is used to filter records based on a specified condition."
+      },
+      {
+        "question": "Which SQL function is used to count the number of rows that match a specific condition?",
+        "options": [
+          "TOTAL()",
+          "COUNT()",
+          "SUM()",
+          "MAX()"
+        ],
+        "correct_answer": "B",
+        "explanation": "The COUNT() function is used to count the number of rows that match a specific condition."
+      },
+      {
+        "question": "In SQL, which statement is used to modify existing records in a table?",
+        "options": [
+          "CHANGE",
+          "MODIFY",
+          "UPDATE",
+          "ALTER"
+        ],
+        "correct_answer": "C",
+        "explanation": "The UPDATE statement is used to modify existing records in a table."
+      },
+      {
+        "question": "What is the correct syntax for creating a new table in SQL?",
+        "options": [
+          "CREATE TABLE table_name (column1 datatype, column2 datatype)",
+          "NEW TABLE table_name (column1 datatype, column2 datatype)",
+          "ADD TABLE table_name (column1 datatype, column2 datatype)",
+          "DEFINE TABLE table_name (column1 datatype, column2 datatype)"
+        ],
+        "correct_answer": "A",
+        "explanation": "The CREATE TABLE statement is used to create a new table in SQL."
+      },
+      {
+        "question": "Which SQL operator is used to sort the result set in ascending order?",
+        "options": [
+          "ORDER BY ASC",
+          "SORT ASC",
+          "ASCENDING",
+          "ORDER ASC"
+        ],
+        "correct_answer": "A",
+        "explanation": "The ORDER BY ASC operator is used to sort the result set in ascending order."
+      },
+      {
+        "question": "In SQL, which statement is used to delete rows from a database table?",
+        "options": [
+          "DELETE",
+          "REMOVE",
+          "DROP",
+          "ERASE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The DELETE statement is used to delete rows from a database table."
+      },
+      {
+        "question": "What SQL statement is used to add a new row to a table?",
+        "options": [
+          "INSERT INTO",
+          "ADD ROW",
+          "NEW ROW",
+          "CREATE ROW"
+        ],
+        "correct_answer": "A",
+        "explanation": "The INSERT INTO statement is used to add a new row to a table."
+      },
+      {
+        "question": "Which SQL function is used to retrieve the maximum value from a column?",
+        "options": [
+          "MAX()",
+          "LARGEST()",
+          "TOP()",
+          "GREATEST()"
+        ],
+        "correct_answer": "A",
+        "explanation": "The MAX() function is used to retrieve the maximum value from a column."
+      },
+      {
+        "question": "In SQL, what is the purpose of the GROUP BY clause?",
+        "options": [
+          "To filter records based on a condition",
+          "To group records with the same values",
+          "To join multiple tables",
+          "To order the result set"
+        ],
+        "correct_answer": "B",
+        "explanation": "The GROUP BY clause is used to group records with the same values together."
+      },
+      {
+        "question": "Which SQL operator is used to combine the result set of two or more SELECT statements?",
+        "options": [
+          "MERGE",
+          "COMBINE",
+          "UNION",
+          "JOIN"
+        ],
+        "correct_answer": "C",
+        "explanation": "The UNION operator is used to combine the result set of two or more SELECT statements."
+      },
+      {
+        "question": "In SQL, what is the purpose of the HAVING clause?",
+        "options": [
+          "To specify the order of the result set",
+          "To filter records based on a condition",
+          "To group records with the same values",
+          "To filter groups based on a condition"
+        ],
+        "correct_answer": "D",
+        "explanation": "The HAVING clause is used in combination with the GROUP BY clause to filter groups based on a condition."
+      },
+      {
+        "question": "Which SQL function is used to retrieve the current date and time?",
+        "options": [
+          "NOW()",
+          "CURRENT_TIMESTAMP()",
+          "GETDATE()",
+          "SYSDATE()"
+        ],
+        "correct_answer": "B",
+        "explanation": "The CURRENT_TIMESTAMP() function is used to retrieve the current date and time."
+      },
+      {
+        "question": "What SQL statement is used to change the structure of a table?",
+        "options": [
+          "ALTER TABLE",
+          "CHANGE TABLE",
+          "MODIFY TABLE",
+          "UPDATE TABLE"
+        ],
+        "correct_answer": "A",
+        "explanation": "The ALTER TABLE statement is used to change the structure of a table in SQL."
+      },
+      {
+        "question": "In SQL, which statement is used to retrieve specific columns from a table?",
+        "options": [
+          "SELECT ROWS",
+          "SHOW COLUMNS",
+          "GET FIELDS",
+          "SELECT COLUMNS"
+        ],
+        "correct_answer": "D",
+        "explanation": "The SELECT statement is used to retrieve specific columns from a table."
+      },
+      {
+        "question": "Which SQL function is used to retrieve the minimum value from a column?",
+        "options": [
+          "MIN()",
+          "SMALLEST()",
+          "BOTTOM()",
+          "LEAST()"
+        ],
+        "correct_answer": "A",
+        "explanation": "The MIN() function is used to retrieve the minimum value from a column."
+      },
+      {
+        "question": "What SQL statement is used to remove a table from the database?",
+        "options": [
+          "DELETE TABLE",
+          "DROP TABLE",
+          "REMOVE TABLE",
+          "ERASE TABLE"
+        ],
+        "correct_answer": "B",
+        "explanation": "The DROP TABLE statement is used to remove a table from the database."
+      },
+      {
+        "question": "In SQL, what is the purpose of the ORDER BY clause?",
+        "options": [
+          "To filter records based on a condition",
+          "To group records with the same values",
+          "To join multiple tables",
+          "To sort the result set"
+        ],
+        "correct_answer": "D",
+        "explanation": "The ORDER BY clause is used to sort the result set in ascending or descending order."
+      },
+      {
+        "question": "Which SQL operator is used to sort the result set in descending order?",
+        "options": [
+          "ORDER BY DESC",
+          "SORT DESC",
+          "DESCENDING",
+          "ORDER DESC"
+        ],
+        "correct_answer": "A",
+        "explanation": "The ORDER BY DESC operator is used to sort the result set in descending order."
+      }
+    ]
+  },
+  "Python": {
+    "easy": [
+      {
+        "question": "What is Python?",
+        "options": [
+          "A programming language",
+          "An operating system",
+          "A web browser",
+          "A hardware device"
+        ],
+        "correct_answer": "A",
+        "explanation": "Python is a high-level programming language known for its simplicity and readability."
+      },
+      {
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+          "A) def",
+          "B) fun",
+          "C) function",
+          "D) define"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'def' keyword is used to define a function in Python."
+      },
+      {
+        "question": "What symbol is used for single-line comments in Python?",
+        "options": [
+          "A) //",
+          "B) /* */",
+          "C) #",
+          "D) --"
+        ],
+        "correct_answer": "C",
+        "explanation": "The '#' symbol is used to create single-line comments in Python."
+      },
+      {
+        "question": "Which of the following data types is mutable in Python?",
+        "options": [
+          "A) int",
+          "B) float",
+          "C) str",
+          "D) list"
+        ],
+        "correct_answer": "D",
+        "explanation": "Lists in Python are mutable, meaning their elements can be changed after creation."
+      },
+      {
+        "question": "What does the 'print()' function do in Python?",
+        "options": [
+          "A) Read input from the user",
+          "B) Display output on the screen",
+          "C) Perform mathematical calculations",
+          "D) Define a new variable"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'print()' function is used to display output on the screen in Python."
+      },
+      {
+        "question": "Which of the following is a Python library used for data manipulation and analysis?",
+        "options": [
+          "A) NumPy",
+          "B) Django",
+          "C) Flask",
+          "D) Tkinter"
+        ],
+        "correct_answer": "A",
+        "explanation": "NumPy is a popular Python library for numerical computing, including data manipulation and analysis."
+      },
+      {
+        "question": "How is an empty list defined in Python?",
+        "options": [
+          "A) emptyList = {}",
+          "B) emptyList = []",
+          "C) emptyList = ()",
+          "D) emptyList = None"
+        ],
+        "correct_answer": "B",
+        "explanation": "An empty list in Python is defined using square brackets: 'emptyList = []'."
+      },
+      {
+        "question": "Which of the following is used to represent 'true' in Python?",
+        "options": [
+          "A) True",
+          "B) TRUE",
+          "C) true",
+          "D) 1"
+        ],
+        "correct_answer": "A",
+        "explanation": "The boolean value 'true' is represented as 'True' in Python."
+      },
+      {
+        "question": "What is the output of '3 == 3.0' in Python?",
+        "options": [
+          "A) True",
+          "B) False",
+          "C) Error",
+          "D) None"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Python, '3' is equal to '3.0' in terms of value, so '3 == 3.0' evaluates to True."
+      },
+      {
+        "question": "Which loop is used for definite iteration in Python?",
+        "options": [
+          "A) for loop",
+          "B) while loop",
+          "C) do-while loop",
+          "D) loop-for"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'for' loop in Python is used for definite iteration over a sequence of elements."
+      },
+      {
+        "question": "What is the result of '7 % 3' in Python?",
+        "options": [
+          "A) 0",
+          "B) 1",
+          "C) 2",
+          "D) 3"
+        ],
+        "correct_answer": "C",
+        "explanation": "The '%' operator in Python is used for modulus or remainder calculation. '7 % 3' equals 1."
+      },
+      {
+        "question": "Which of the following is NOT a valid variable name in Python?",
+        "options": [
+          "A) my_variable",
+          "B) 123variable",
+          "C) _myVariable",
+          "D) variable123"
+        ],
+        "correct_answer": "B",
+        "explanation": "Variable names in Python cannot start with a number, so '123variable' is not a valid variable name."
+      },
+      {
+        "question": "What is the 'and' operator used for in Python?",
+        "options": [
+          "A) Bitwise AND operation",
+          "B) Logical AND operation",
+          "C) String concatenation",
+          "D) Exponentiation"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'and' operator in Python is used for logical conjunction, returning True only if both operands are True."
+      },
+      {
+        "question": "Which of the following is a built-in function in Python for sorting a list?",
+        "options": [
+          "A) order_list()",
+          "B) sort_list()",
+          "C) sorted()",
+          "D) arrange_list()"
+        ],
+        "correct_answer": "C",
+        "explanation": "'sorted()' is a built-in function in Python used for sorting a list."
+      },
+      {
+        "question": "What is the result of '2 ** 3' in Python?",
+        "options": [
+          "A) 5",
+          "B) 6",
+          "C) 7",
+          "D) 8"
+        ],
+        "correct_answer": "D",
+        "explanation": "The '**' operator in Python is used for exponentiation. '2 ** 3' equals 8."
+      },
+      {
+        "question": "Which of the following is used to open a file in Python?",
+        "options": [
+          "A) read_file()",
+          "B) open_file()",
+          "C) start_file()",
+          "D) file_open()"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'open()' function in Python is used to open files for reading, writing, or appending data."
+      },
+      {
+        "question": "What does the 'len()' function do in Python?",
+        "options": [
+          "A) Return the last element of a list",
+          "B) Return the length of a string or list",
+          "C) Calculate the logarithm",
+          "D) Find the maximum element in a list"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'len()' function in Python is used to return the length of a string, list, tuple, dictionary, etc."
+      },
+      {
+        "question": "Which of the following is used to combine two or more lists in Python?",
+        "options": [
+          "A) connect()",
+          "B) merge()",
+          "C) append()",
+          "D) extend()"
+        ],
+        "correct_answer": "D",
+        "explanation": "The 'extend()' method in Python is used to add elements from another list to the end of the current list."
+      },
+      {
+        "question": "What is the result of 'True or False' in Python?",
+        "options": [
+          "A) True",
+          "B) False",
+          "C) Error",
+          "D) None"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'or' operator in Python returns True if either of the operands is True. 'True or False' evaluates to True."
+      },
+      {
+        "question": "Which of the following is used to remove an element by value from a list in Python?",
+        "options": [
+          "A) pop()",
+          "B) delete()",
+          "C) remove()",
+          "D) erase()"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'remove()' method in Python is used to remove the first occurrence of a value from a list."
+      }
+    ],
+    "medium": [
+      {
+        "question": "What is the output of the following code snippet? \n\nprint(2 ** 3)",
+        "options": [
+          "A) 6",
+          "B) 8",
+          "C) 16",
+          "D) 5"
+        ],
+        "correct_answer": "B",
+        "explanation": "The ** operator in Python represents exponentiation. So, 2 ** 3 equals 8."
+      },
+      {
+        "question": "Which of the following is a valid variable name in Python?",
+        "options": [
+          "A) 2variable",
+          "B) _myVar",
+          "C) my var",
+          "D) break"
+        ],
+        "correct_answer": "B",
+        "explanation": "Variable names can start with a letter or an underscore, followed by letters, digits or underscores."
+      },
+      {
+        "question": "What will be the output of the code snippet below? \n\nprint('Hello' + 'World' * 3)",
+        "options": [
+          "A) HelloWorldHello",
+          "B) Hello World World World",
+          "C) HelloWorldWorldWorld",
+          "D) HelloWorld3"
+        ],
+        "correct_answer": "C",
+        "explanation": "The expression 'Hello' + 'World' * 3 will concatenate 'Hello' with 'World' repeated 3 times."
+      },
+      {
+        "question": "Which of the following statements is correct about Python?",
+        "options": [
+          "A) Python is a low-level language.",
+          "B) Python uses braces for code blocks.",
+          "C) Python is an interpreted language.",
+          "D) Python does not support object-oriented programming."
+        ],
+        "correct_answer": "C",
+        "explanation": "Python is an interpreted language, meaning code is executed line by line."
+      },
+      {
+        "question": "What does the 'range()' function in Python return?",
+        "options": [
+          "A) A list of numbers",
+          "B) A random number",
+          "C) A generator object",
+          "D) A tuple"
+        ],
+        "correct_answer": "C",
+        "explanation": "The range() function in Python returns a generator object that yields a sequence of numbers."
+      },
+      {
+        "question": "In Python, which keyword is used to define a function?",
+        "options": [
+          "A) method",
+          "B) func",
+          "C) def",
+          "D) define"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'def' keyword is used to define a function in Python."
+      },
+      {
+        "question": "What is the output of the code snippet below? \n\nprint('Python'[1:4])",
+        "options": [
+          "A) Pyt",
+          "B) ytho",
+          "C) thon",
+          "D) yth"
+        ],
+        "correct_answer": "B",
+        "explanation": "Slicing 'Python' from index 1 to 4 (excluding 4) gives 'ytho'."
+      },
+      {
+        "question": "How do you comment out a single line in Python?",
+        "options": [
+          "A) // This is a comment",
+          "B) # This is a comment",
+          "C) <!-- This is a comment -->",
+          "D) /* This is a comment */"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Python, a comment is indicated by the '#' symbol and it comments out the rest of the line."
+      },
+      {
+        "question": "What will be the value of x after the code below is executed? \n\nx = 5\nx += 3",
+        "options": [
+          "A) 2",
+          "B) 8",
+          "C) 3",
+          "D) 5"
+        ],
+        "correct_answer": "B",
+        "explanation": "The statement x += 3 is equivalent to x = x + 3, so x will be 5 + 3 which is 8."
+      },
+      {
+        "question": "Which of the following is used to format a string in Python?",
+        "options": [
+          "A) %",
+          "B) #",
+          "C) &",
+          "D) $"
+        ],
+        "correct_answer": "A",
+        "explanation": "The % operator is used for string formatting in Python."
+      },
+      {
+        "question": "What is the correct way to check if two variables reference the same object in memory in Python?",
+        "options": [
+          "A) var1 is var2",
+          "B) var1 == var2",
+          "C) var1.equals(var2)",
+          "D) var1 === var2"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'is' operator in Python is used to check if two variables reference the same object in memory."
+      },
+      {
+        "question": "Which of the following data types is mutable in Python?",
+        "options": [
+          "A) int",
+          "B) str",
+          "C) list",
+          "D) tuple"
+        ],
+        "correct_answer": "C",
+        "explanation": "A list is a mutable data type in Python, meaning its elements can be changed."
+      },
+      {
+        "question": "What will be the output of the code snippet below? \n\nprint('Python'[::2])",
+        "options": [
+          "A) Pto",
+          "B) Ptoh",
+          "C) Ptohn",
+          "D) Pyn"
+        ],
+        "correct_answer": "A",
+        "explanation": "Using [::2] slicing, it will print every second character of the string 'Python'."
+      },
+      {
+        "question": "In Python, what does the 'sys.argv' list contain?",
+        "options": [
+          "A) Arguments passed to a function",
+          "B) System variables",
+          "C) Command line arguments",
+          "D) Standard input"
+        ],
+        "correct_answer": "C",
+        "explanation": "'sys.argv' in Python contains the command line arguments passed to the script."
+      },
+      {
+        "question": "What is the purpose of 'pickle' module in Python?",
+        "options": [
+          "A) To work with CSV files",
+          "B) To serialize and deserialize objects",
+          "C) To perform mathematical operations",
+          "D) To create GUI applications"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'pickle' module in Python is used for serializing and deserializing Python objects."
+      },
+      {
+        "question": "Which of the following is a correct way to open and read a file in Python?",
+        "options": [
+          "A) file.open('example.txt', 'r')",
+          "B) open('example.txt')",
+          "C) file.read('example.txt')",
+          "D) open('example.txt', 'r')"
+        ],
+        "correct_answer": "D",
+        "explanation": "The correct way to open and read a file in Python is using open('filename', 'mode')."
+      },
+      {
+        "question": "What is the purpose of 'pass' statement in Python?",
+        "options": [
+          "A) To skip execution of a block of code",
+          "B) To indicate the start of a function",
+          "C) To exit a loop",
+          "D) To raise an exception"
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'pass' statement in Python is used as a placeholder and does nothing. It can be used when a statement is syntactically required but you do not want any command or code to execute."
+      },
+      {
+        "question": "Which of the following is true about Python's 'lambda' functions?",
+        "options": [
+          "A) Lambda functions can have multiple expressions.",
+          "B) Lambda functions cannot have arguments.",
+          "C) Lambda functions can have a return statement.",
+          "D) Lambda functions are defined using the keyword 'function'."
+        ],
+        "correct_answer": "C",
+        "explanation": "Lambda functions in Python can have a single expression and implicitly return the result of that expression."
+      },
+      {
+        "question": "What is the output of the code snippet below? \n\nprint(not True and True)",
+        "options": [
+          "A) True",
+          "B) False",
+          "C) Error",
+          "D) None"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'not' operator has a higher precedence than 'and'. So, 'not True and True' evaluates to 'False'."
+      },
+      {
+        "question": "Which of the following is correct about Python's 'pass by object reference'?",
+        "options": [
+          "A) Python uses pass by object reference for all data types.",
+          "B) In pass by object reference, changes to function arguments affect the original objects.",
+          "C) Pass by object reference is the same as pass by value.",
+          "D) Pass by object reference is not supported in Python."
+        ],
+        "correct_answer": "B",
+        "explanation": "In Python, all variables hold references to objects. When you pass a mutable object as an argument to a function, changes made to the object inside the function will be reflected outside as well."
+      }
+    ],
+    "hard": [
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = 5\ny = 2\nz = x // y\nprint(z)",
+        "options": [
+          "A) 2.5",
+          "B) 2",
+          "C) 3",
+          "D) 2.0"
+        ],
+        "correct_answer": "B",
+        "explanation": "The '//' operator performs integer division in Python, resulting in the output being the floor value of the division, which is 2 in this case."
+      },
+      {
+        "question": "Which of the following statements about Python's pass statement is correct?",
+        "options": [
+          "A) It is used for exiting a loop prematurely.",
+          "B) It is used to skip a block of code.",
+          "C) It is used to terminate the program.",
+          "D) It is used to define a function."
+        ],
+        "correct_answer": "B",
+        "explanation": "The pass statement in Python is used as a placeholder when a statement is syntactically required but you do not want any code or action to occur."
+      },
+      {
+        "question": "What is the output of the following code snippet?\n\nx = 'hello'\nprint(x[::2])",
+        "options": [
+          "A) 'hlo'",
+          "B) 'hl'",
+          "C) 'el'",
+          "D) 'eol'"
+        ],
+        "correct_answer": "A",
+        "explanation": "The slicing '[::2]' syntax extracts every second character from the string, resulting in 'hlo' being printed."
+      },
+      {
+        "question": "In Python, what is the purpose of using the 'yield' keyword in a function?",
+        "options": [
+          "A) To return a value from a function.",
+          "B) To define a generator function.",
+          "C) To raise an exception.",
+          "D) To stop the execution of a function."
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'yield' keyword is used in Python to create a generator function, which can be iterated over to produce a sequence of values on the fly."
+      },
+      {
+        "question": "Which of the following is true about Python's 'is' operator?",
+        "options": [
+          "A) It checks if two values are equal.",
+          "B) It checks if two values are identical.",
+          "C) It checks if two values have the same memory address.",
+          "D) It is used to perform bitwise comparison."
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'is' operator in Python checks if two variables refer to the same object in memory, not just if their values are equal."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = [1, 2, 3]\nprint(x * 2)",
+        "options": [
+          "A) [1, 2, 3, 1, 2, 3]",
+          "B) [2, 4, 6]",
+          "C) [1, 4, 9]",
+          "D) [1, 2, 3, 2, 4, 6]"
+        ],
+        "correct_answer": "A",
+        "explanation": "When a list is multiplied by an integer, it replicates the elements in the list the specified number of times."
+      },
+      {
+        "question": "What is the purpose of the 'super()' function in Python?",
+        "options": [
+          "A) To call the parent class constructor.",
+          "B) To create a new object instance.",
+          "C) To check if a class is a subclass of another class.",
+          "D) To access private member variables."
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'super()' function is used to call a method from a parent class in Python, allowing for method overriding and code reuse in inheritance."
+      },
+      {
+        "question": "Which of the following is a correct way to open a file named 'data.txt' in Python for reading?",
+        "options": [
+          "A) file = open('data.txt', 'r')",
+          "B) file = open('data.txt', 'read')",
+          "C) file = open('data.txt', 'w')",
+          "D) file = open('data.txt', 'rb')"
+        ],
+        "correct_answer": "A",
+        "explanation": "To open a file in Python for reading, the correct mode is 'r' which stands for read. So, the correct way to open 'data.txt' for reading is 'file = open('data.txt', 'r')'."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = 5\ny = 2\nprint(x ** y)",
+        "options": [
+          "A) 7",
+          "B) 25",
+          "C) 10",
+          "D) 8"
+        ],
+        "correct_answer": "B",
+        "explanation": "The '**' operator in Python is used for exponentiation. So, '5 ** 2' results in 25 being printed."
+      },
+      {
+        "question": "In Python, what is the purpose of the 'join()' method when used with strings?",
+        "options": [
+          "A) To split a string into substrings.",
+          "B) To replace characters in a string.",
+          "C) To concatenate a list of strings into a single string.",
+          "D) To reverse a string."
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'join()' method in Python is used to concatenate a list of strings into a single string by joining them with a specified separator."
+      },
+      {
+        "question": "Which of the following is true about Python's 'mutable' data types?",
+        "options": [
+          "A) Strings are mutable.",
+          "B) Tuples are mutable.",
+          "C) Lists are mutable.",
+          "D) Dictionaries are mutable."
+        ],
+        "correct_answer": "C",
+        "explanation": "In Python, lists are mutable data types, meaning their elements can be changed or modified after creation."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = 10\nif x > 5 and x < 15:\n    print('Pass')\nelse:\n    print('Fail')",
+        "options": [
+          "A) 10",
+          "B) Pass",
+          "C) Fail",
+          "D) Pass\nFail"
+        ],
+        "correct_answer": "B",
+        "explanation": "The condition 'x > 5 and x < 15' evaluates to true when x is between 5 and 15, so 'Pass' will be printed."
+      },
+      {
+        "question": "Which of the following is NOT a valid way to comment in Python?",
+        "options": [
+          "A) // This is a comment",
+          "B) # This is a comment",
+          "C) ''' This is a comment '''",
+          "D) // This is also a comment"
+        ],
+        "correct_answer": "A",
+        "explanation": "In Python, comments are preceded by the '#' symbol. The other options are not valid ways to write comments in Python."
+      },
+      {
+        "question": "What will be the type of the variable 'result' after executing the following code snippet?\n\nresult = 10 / 3",
+        "options": [
+          "A) int",
+          "B) float",
+          "C) str",
+          "D) bool"
+        ],
+        "correct_answer": "B",
+        "explanation": "When dividing two integers in Python, the result is automatically converted to a floating-point number, so 'result' will be of type float."
+      },
+      {
+        "question": "In Python, what is the purpose of the 'lambda' keyword?",
+        "options": [
+          "A) To define a block of code within a function.",
+          "B) To create anonymous functions.",
+          "C) To raise a custom exception.",
+          "D) To import external libraries."
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'lambda' keyword in Python is used to create anonymous functions, which are small, nameless functions defined at runtime."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = [1, 2, 3]\nx[0], x[1] = x[1], x[0]\nprint(x)",
+        "options": [
+          "A) [2, 1, 3]",
+          "B) [1, 2, 3]",
+          "C) [1, 1, 3]",
+          "D) [1, 1, 2]"
+        ],
+        "correct_answer": "A",
+        "explanation": "The code swaps the values at index 0 and 1 in the list 'x', resulting in 'x' being [2, 1, 3] when printed."
+      },
+      {
+        "question": "Which of the following is true about Python's 'global' keyword?",
+        "options": [
+          "A) It is used to define global variables.",
+          "B) It is used to access local variables.",
+          "C) It is used to import modules.",
+          "D) It is used to declare functions."
+        ],
+        "correct_answer": "A",
+        "explanation": "The 'global' keyword in Python is used inside a function to declare that a variable inside the function is global and refers to the global scope, allowing it to be modified."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = 15\ny = 4\nprint(x % y)",
+        "options": [
+          "A) 3",
+          "B) 4",
+          "C) 3.75",
+          "D) 0"
+        ],
+        "correct_answer": "A",
+        "explanation": "The '%' operator in Python is used for calculating the modulus or remainder of a division operation. So, '15 % 4' results in 3 being printed."
+      },
+      {
+        "question": "In Python, what does the 'enumerate()' function do?",
+        "options": [
+          "A) Sorts the elements of a list in ascending order.",
+          "B) Returns an iterator of index-value pairs.",
+          "C) Combines two lists into a single list.",
+          "D) Reverses the elements of a list."
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'enumerate()' function in Python adds a counter to an iterable and returns it in the form of an enumerate object, which yields index-value pairs."
+      },
+      {
+        "question": "What will be the output of the following code snippet?\n\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)",
+        "options": [
+          "A) [1, 2, 3]",
+          "B) [4, 2, 3]",
+          "C) [1, 4, 3]",
+          "D) [4, 4, 4]"
+        ],
+        "correct_answer": "B",
+        "explanation": "In Python, when you assign a list to another variable, you are creating a reference to the original list. So, changing 'y' also changes 'x', resulting in 'x' being [4, 2, 3]."
+      },
+      {
+        "question": "Which of the following is true about Python's 'assert' statement?",
+        "options": [
+          "A) It is used to define assertions in a function.",
+          "B) It is used to print debug messages.",
+          "C) It is used to raise exceptions.",
+          "D) It is used to confirm assumptions during debugging."
+        ],
+        "correct_answer": "D",
+        "explanation": "The 'assert' statement in Python is used for debugging purposes to confirm assumptions during development. If the assertion is false, an AssertionError is raised."
+      }
+    ]
+  }
+}

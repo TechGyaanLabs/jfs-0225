@@ -11,6 +11,7 @@
         <module>iplstats-app</module>
         <module>working-with-files</module>
         <module>learning-jdbc</module>
+        <module>quiz-app</module>
     </modules>
 
     <properties>
