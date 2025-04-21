@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning HTML</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- HTML Comments -->
+        <div>
+            <h3 class="sub-heading">HTML Headings</h3>
+            <h1>This is a heading</h1>
+            <h2>This is a heading</h2>
+            <h3>This is a heading</h3>
+            <h4>This is a heading</h4>
+            <h5>This is a heading</h5>
+            <h6>This is a heading</h6>
+        </div>
+        <div>
+            <h3 class="sub-heading">HTML Paragraphs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio incidunt deserunt reprehenderit voluptas, eaque illo beatae! Vitae sint fuga veritatis voluptatem itaque, earum suscipit, cupiditate fugit maxime laudantium libero soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate, possimus quidem molestias sed quis excepturi deleniti explicabo repudiandae similique recusandae incidunt doloremque suscipit iure sit vero sequi, at unde.</p>
+        </div>
+
+        <div>
+            <h3 class="sub-heading">HTML Links</h3>
+            <a href="https://www.w3schools.com">Visit W3Schools.com</a>
+            <br>
+            <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com</a>
+            <br>
+            <a href="https://www.w3schools.com" target="_blank" title="W3Schools">Visit W3Schools.com</a>
+            <br>
+       </div>
+
+        <div>
+            <h3 class="sub-heading">HTML Images</h3>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142">
+            <br>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142" style="border:1px solid #000000;">
+            <br>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142" style="border:1px solid #000000; border-radius: 8px;">
+        </div>
+
+        <div>
+            <h3 class="sub-heading">HTML Lists</h3>
+            <h4>HTML Unordered List</h4>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <h4>HTML Ordered List</h4>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+            <h4>HTML Description List</h4>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub.</dd>
+                <dt>Tea</dt>
+                <dd>- A hot drink made by infusing the dried crushed leaves of the tea plant in boiling water.</dd>
+                <dt>Milk</dt>
+                <dd>- A white liquid produced by the mammary glands of mammals.</dd>
+            </dl>
+        </div>
+        <div>
+            <h3 class="sub-heading">HTML Tables</h3>
+            <table id="customers">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Smith</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>James</td>
+                        <td>Doe</td>
+                        <td>45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3 class="sub-heading">HTML Forms</h3>
+            <form action="/submit_form" method="post" id="reg-form">
+               <!-- Add form element with name,email,mobile,gendar,hobbies, qualifiction(BE/BTech,Masters,Degree,Others)-->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            Female
+                        </label>
+                        <label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Hobbies:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="reading" name="hobbies" value="reading">
+                            Reading
+                        </label>
+                        <label>
+                            <input type="checkbox" id="sports" name="hobbies" value="sports">
+                            Sports
+                        </label>
+                        <label>
+                            <input type="checkbox" id="music" name="hobbies" value="music">
+                            Music
+                        </label>
+                        <label>
+                            <input type="checkbox" id="travel" name="hobbies" value="travel">
+                            Travel
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="qualification">Qualification:</label>
+                    <select id="qualification" name="qualification" required>
+                        <option value="">Select Qualification</option>
+                        <option value="be-btech">BE/BTech</option>
+                        <option value="masters">Masters</option>
+                        <option value="degree">Degree</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn-submit">
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
