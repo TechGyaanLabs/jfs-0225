@@ -13,6 +13,7 @@
         <module>learning-jdbc</module>
         <module>quiz-app</module>
         <module>hello-world</module>
+        <module>learning-spring-boot</module>
     </modules>
 
     <properties>

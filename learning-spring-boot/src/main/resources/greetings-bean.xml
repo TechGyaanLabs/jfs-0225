@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Greetings Bean -->
+    <bean id="greetings" class="com.careerit.sb.domain.Greetings">
+        <property name="message" value="Congratulation for your first madel"/>
+    </bean>
+
+    <!-- GreetingService Bean -->
+    <bean id="greetingService" class="com.careerit.sb.service.GreetingService">
+        <property name="greetings" ref="greetings"/>
+    </bean>
+
+</beans> 
