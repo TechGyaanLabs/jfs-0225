@@ -1,5 +1,6 @@
 package com.careerit.sb;
 
+import com.careerit.sb.beanscopes.ProductService;
 import com.careerit.sb.di.UserService;
 import com.careerit.sb.domain.Greetings;
 import com.careerit.sb.service.GreetingService;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Component;
@@ -19,6 +21,9 @@ public class LearningSpringBootApplication implements  CommandLineRunner  {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private  ApplicationContext context;
+
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(LearningSpringBootApplication.class, args);
 	}
@@ -27,6 +32,13 @@ public class LearningSpringBootApplication implements  CommandLineRunner  {
 	public void run(String... args) throws Exception {
 		List<String> users = userService.getAllUsers();
 		System.out.println("Users: " + users);
+
+		ProductService obj1 = context.getBean(ProductService.class);
+		System.out.println(obj1);
+
+		
+		
+
 	}
 
 }
