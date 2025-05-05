@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "b3f2100f-c21e-4693-97dc-a4330a478cd8",
+		"name": "todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39832263"
+	},
+	"item": [
+		{
+			"name": "all_active_tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_name}}/api/v1/task/all",
+					"host": [
+						"{{host_name}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all_actived_tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_name}}/api/v1/task/all",
+					"host": [
+						"{{host_name}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_name}}/api/v1/task/all-archived",
+					"host": [
+						"{{host_name}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"all-archived"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_new_task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Learning Spring Boot JPA\",\n    \"description\":\"Learning Spring Boot JPA By going through records and practicing class room examples\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host_name}}/api/v1/task",
+					"host": [
+						"{{host_name}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Learning Spring Boot JPA\",\n    \"description\":\"Learning Spring Boot JPA By going through records and practicing class room examples\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host_name}}/api/v1/task",
+					"host": [
+						"{{host_name}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Learning Spring Boot JPA\",\n    \"description\":\"Learning Spring Boot JPA By going through records and practicing class room examples\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host_name}}/api/v1/task/a0001a4b-8d42-4311-a1f6-29fefc21c680",
+					"host": [
+						"{{host_name}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"a0001a4b-8d42-4311-a1f6-29fefc21c680"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host_name",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "host_name",
+			"value": "http://render.com",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}

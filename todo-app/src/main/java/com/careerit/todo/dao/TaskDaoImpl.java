@@ -27,7 +27,21 @@ public class TaskDaoImpl implements TaskDao{
 
     @Override
     public Task updateTask(Task task) {
-        return null;
+        UUID id = task.getId();
+        Task existingTask = tasks
+                .stream()
+                .filter(t -> t.getId().equals(id))
+                .findFirst()
+                .orElse(null);
+        if(existingTask != null){
+            tasks.remove(existingTask);
+            tasks.add(task);
+            log.info("Task with id {} updated successfully", id);
+            return task;
+        } else {
+            log.error("Task with id {} not found", id);
+            return null;
+        }
     }
 
     @Override
@@ -36,8 +50,9 @@ public class TaskDaoImpl implements TaskDao{
     }
 
     @Override
-    public boolean deleteTask(String id) {
-        return false;
+    public boolean deleteTask(UUID id) {
+        return tasks
+                .removeIf(task -> task.getId().equals(id));
     }
 
     @Override
@@ -55,11 +70,28 @@ public class TaskDaoImpl implements TaskDao{
 
     @Override
     public List<Task> selectArchivedTasks() {
-        return List.of();
+        return tasks
+                .stream()
+                .filter(task -> task.getStatus() == Status.ARCHIVED)
+                .toList();
     }
 
     @Override
     public List<Task> search(String title, Priority priority, Status status) {
+        if(title == null && priority == null && status == null){
+            return selectActiveTasks();
+        } else {
+            return selectActiveTasks()
+                    .stream()
+                    .filter(task -> task.getTitle().toLowerCase().contains(title!=null ? title.toLowerCase() : ""))
+                    .filter(task -> task.getPriority() == (priority != null ? priority : task.getPriority()))
+                    .filter(task -> task.getStatus() == (status != null ? status : task.getStatus()))
+                    .toList();
+        }
+    }
+
+    @Override
+    public List<Task> addAllTasks(List<Task> tasks) {
         return List.of();
     }
 }
