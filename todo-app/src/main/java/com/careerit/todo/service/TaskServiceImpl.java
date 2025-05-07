@@ -4,8 +4,8 @@ import com.careerit.todo.dao.TaskDao;
 import com.careerit.todo.domain.Priority;
 import com.careerit.todo.domain.Status;
 import com.careerit.todo.domain.Task;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
@@ -15,24 +15,18 @@ import java.util.UUID;
 
 @Service
 @Slf4j
-@RequiredArgsConstructor
+
 public class TaskServiceImpl implements TaskService {
+
 
     private final TaskDao taskDao;
 
+    public TaskServiceImpl(@Qualifier("taskDaoDBImpl") TaskDao taskDao) {
+        this.taskDao = taskDao;
+    }
     @Override
     public Task createTask(Task task) {
-        Assert.notNull(task, "Task cannot be null");
-        Assert.notNull(task.getTitle(), "Task title cannot be null");
-        if(task.getPriority() == null){
-            task.setPriority(Priority.LOW);
-        }
-        if(task.getStatus() == null){
-            task.setStatus(Status.PENDING);
-        }
-        if(task.getDueDate() == null){
-            task.setDueDate(LocalDate.now().plusDays(5));
-        }
+        validateAndSetDefaultValues(task);
         Task newTask = taskDao.insertTask(task);
         log.info("Task with title {} created successfully", task.getTitle());
         return newTask;
@@ -94,6 +88,24 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<Task> addAllTasks(List<Task> tasks) {
-        return List.of();
+        log.info("Adding {} tasks", tasks.size());
+        for(Task task : tasks){
+            validateAndSetDefaultValues(task);
+        }
+        return taskDao.addAllTasks(tasks);
+    }
+
+    private static void validateAndSetDefaultValues(Task task) {
+        Assert.notNull(task, "Task cannot be null");
+        Assert.notNull(task.getTitle(), "Task title cannot be null");
+        if(task.getPriority() == null){
+            task.setPriority(Priority.LOW);
+        }
+        if(task.getStatus() == null){
+            task.setStatus(Status.PENDING);
+        }
+        if(task.getDueDate() == null){
+            task.setDueDate(LocalDate.now().plusDays(5));
+        }
     }
 }

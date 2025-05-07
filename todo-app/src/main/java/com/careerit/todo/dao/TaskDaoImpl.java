@@ -89,9 +89,9 @@ public class TaskDaoImpl implements TaskDao{
                     .toList();
         }
     }
-
     @Override
     public List<Task> addAllTasks(List<Task> tasks) {
-        return List.of();
+        this.tasks.addAll(tasks);
+        return tasks;
     }
 }
