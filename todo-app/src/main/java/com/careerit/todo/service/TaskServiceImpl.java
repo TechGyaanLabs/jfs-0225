@@ -95,6 +95,14 @@ public class TaskServiceImpl implements TaskService {
         return taskDao.addAllTasks(tasks);
     }
 
+    @Override
+    public Task updateStatus(UUID id, Status status) {
+        log.info("Updating status of task with id {} to {}", id, status);
+        Task task = taskDao.updateStatus(id, status);
+        log.info("Task with id {} updated successfully", id);
+        return task;
+    }
+
     private static void validateAndSetDefaultValues(Task task) {
         Assert.notNull(task, "Task cannot be null");
         Assert.notNull(task.getTitle(), "Task title cannot be null");

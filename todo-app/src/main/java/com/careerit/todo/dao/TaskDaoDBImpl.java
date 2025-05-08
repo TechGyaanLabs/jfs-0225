@@ -161,4 +161,17 @@ public class TaskDaoDBImpl implements TaskDao {
         log.info("Added {} tasks", tasks.size());
         return tasks;
     }
+
+    @Override
+    public Task updateStatus(UUID id, Status status) {
+        String sql = "UPDATE task SET status = ? WHERE id = ?";
+        int rows = jdbcTemplate.update(sql, status.name(), id);
+        if (rows > 0) {
+            log.info("Task with id {} updated to status {}", id, status);
+            return selectById(id.toString());
+        } else {
+            log.error("Task with id {} not found", id);
+            return null;
+        }
+    }
 }

@@ -94,4 +94,9 @@ public class TaskDaoImpl implements TaskDao{
         this.tasks.addAll(tasks);
         return tasks;
     }
+
+    @Override
+    public Task updateStatus(UUID id, Status status) {
+        return null;
+    }
 }

@@ -21,7 +21,7 @@ public class TaskQueriesUtil {
         from
         	task
         where
-        	status in('ACTIVE', 'PENDING')
+        	status in('PENDING','IN_PROGRESS','COMPLETED')
        """;
 
 

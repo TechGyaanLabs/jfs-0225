@@ -5,7 +5,6 @@ import com.careerit.todo.domain.Status;
 import com.careerit.todo.domain.Task;
 import com.careerit.todo.service.TaskService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,6 +59,12 @@ public class TaskController {
     public ResponseEntity<List<Task>> addAllTasks(@RequestBody List<Task> tasks) {
         List<Task> addedTasks = taskService.addAllTasks(tasks);
         return ResponseEntity.ok(addedTasks);
+    }
+
+    @PutMapping("/update-status/{id}/{status}")
+    public ResponseEntity<Task> updateStatus(@PathVariable ("id") UUID id, @PathVariable ("status") Status status) {
+           Task task = taskService.updateStatus(id, status);
+           return ResponseEntity.ok(task);
     }
 
 }

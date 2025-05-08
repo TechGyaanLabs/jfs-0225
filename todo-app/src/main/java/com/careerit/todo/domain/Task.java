@@ -1,5 +1,6 @@
 package com.careerit.todo.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ public class Task {
     private UUID id;
     private String title;
     private String description;
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dueDate;
     private Priority priority;
     private Status status;

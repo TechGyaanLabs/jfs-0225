@@ -17,5 +17,6 @@ public interface TaskService {
     List<Task> getArchivedTasks();
     List<Task> search(String title, Priority priority, Status status);
     List<Task> addAllTasks(List<Task> tasks);
+    Task updateStatus(UUID id, Status status);
 
 }
