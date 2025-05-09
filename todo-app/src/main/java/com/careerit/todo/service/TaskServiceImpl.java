@@ -77,12 +77,12 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public List<Task> search(String title, Priority priority, Status status) {
-         log.info("Requesting for tasks with title {}, priority {} and status {}", title, priority, status);
-         if (title == null && priority == null && status == null) {
+    public List<Task> search(String title, boolean flag) {
+        log.info("Searching for tasks with title {} and flag {}", title, flag);
+         if ((title == null || title.isEmpty()) ) {
             return taskDao.selectActiveTasks();
          }else {
-            return taskDao.search(title, priority, status);
+            return taskDao.search(title,flag);
          }
     }
 

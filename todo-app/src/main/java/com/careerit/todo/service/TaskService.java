@@ -1,6 +1,5 @@
 package com.careerit.todo.service;
 
-import com.careerit.todo.domain.Priority;
 import com.careerit.todo.domain.Status;
 import com.careerit.todo.domain.Task;
 
@@ -15,7 +14,7 @@ public interface TaskService {
     boolean deleteTask(UUID id);
     List<Task> getAllActiveTasks();
     List<Task> getArchivedTasks();
-    List<Task> search(String title, Priority priority, Status status);
+    List<Task> search(String title, boolean flag);
     List<Task> addAllTasks(List<Task> tasks);
     Task updateStatus(UUID id, Status status);
 

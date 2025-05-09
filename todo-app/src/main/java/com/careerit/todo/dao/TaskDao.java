@@ -1,6 +1,5 @@
 package com.careerit.todo.dao;
 
-import com.careerit.todo.domain.Priority;
 import com.careerit.todo.domain.Status;
 import com.careerit.todo.domain.Task;
 
@@ -14,7 +13,7 @@ public interface TaskDao {
     boolean deleteTask(UUID id);
     List<Task> selectActiveTasks();
     List<Task> selectArchivedTasks();
-    List<Task> search(String title, Priority priority, Status status);
+    List<Task>  search(String title,boolean flag);
     List<Task> addAllTasks(List<Task> tasks);
     Task updateStatus(UUID id, Status status);
 }

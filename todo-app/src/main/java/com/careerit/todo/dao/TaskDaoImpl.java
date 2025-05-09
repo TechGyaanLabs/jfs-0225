@@ -1,6 +1,5 @@
 package com.careerit.todo.dao;
 
-import com.careerit.todo.domain.Priority;
 import com.careerit.todo.domain.Status;
 import com.careerit.todo.domain.Task;
 import lombok.extern.slf4j.Slf4j;
@@ -77,15 +76,13 @@ public class TaskDaoImpl implements TaskDao{
     }
 
     @Override
-    public List<Task> search(String title, Priority priority, Status status) {
-        if(title == null && priority == null && status == null){
+    public List<Task>  search(String title,boolean flag) {
+        if(title == null){
             return selectActiveTasks();
         } else {
             return selectActiveTasks()
                     .stream()
                     .filter(task -> task.getTitle().toLowerCase().contains(title!=null ? title.toLowerCase() : ""))
-                    .filter(task -> task.getPriority() == (priority != null ? priority : task.getPriority()))
-                    .filter(task -> task.getStatus() == (status != null ? status : task.getStatus()))
                     .toList();
         }
     }

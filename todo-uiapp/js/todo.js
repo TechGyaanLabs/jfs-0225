@@ -1,4 +1,3 @@
-
 const baseUrl = 'http://localhost:8081/api/v1/task';
 
 const idTodoTable = document.getElementById('idTodoTable');
@@ -9,6 +8,12 @@ const getTasks = async () => {
 }
 const getArchivedTasks = async () => {
     const response = await fetch(baseUrl+'/all-archived');
+    const data = await response.json();
+    return data;
+}
+
+const getSearchTasks = async (title, flag) => {
+    const response = await fetch(baseUrl+'/search?title='+title+'&flag='+flag);
     const data = await response.json();
     return data;
 }
@@ -91,10 +96,83 @@ function updateTaskStatus(id,currentStatus) {
 
 const idShowArchived  = document.getElementById('idShowArchived');
 
+let isActive = true;
 idShowArchived.addEventListener('click', function() {
         showTasks(getArchivedTasks);
+        isActive = false;
 });
 
 
 showTasks(getTasks);
+
+
+const idShowActiveTasks = document.getElementById('idShowActiveTasks');
+idShowActiveTasks.addEventListener('click', function() {
+    showTasks(getTasks);
+});
+
+
+
+
+const idSearchTitle = document.getElementById('searchTitle');
+
+
+function showSearchResult() {
+    const title = idSearchTitle.value;
+
+    showTasks(getSearchTasks.bind(null, title,isActive));
+}
+
+
+idSearchTitle.addEventListener('keyup', function() {
+    showSearchResult();
+});
+
+// Add event listener for the "New Task" button
+document.getElementById('addNewTask').addEventListener('click', function() {
+    // Reset form before showing
+    document.getElementById('addTaskForm').reset();
+    // Show modal
+    new bootstrap.Modal(document.getElementById('addTaskModal')).show();
+});
+
+// Handle form submission
+document.getElementById('addTaskForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const task = {
+        title: document.getElementById('taskTitle').value,
+        description: document.getElementById('taskDescription').value,
+        dueDate: document.getElementById('taskDueDate').value,
+        priority: document.getElementById('taskPriority').value
+    };
+
+    // Send POST request to add task
+    fetch(baseUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(task)
+    }).then(response => {
+        if (response.ok) {
+            // Task added successfully
+            showTasks(getTasks);
+        } else {
+            // Handle error
+            alert('Error adding task');
+        }
+    }
+    ).catch(error => {
+        alert('Error:', error);
+    });
+
+    // Close modal and reset form
+    bootstrap.Modal.getInstance(document.getElementById('addTaskModal')).hide();
+    this.reset();
+
+    // Refresh task list
+    showTasks();
+});
 

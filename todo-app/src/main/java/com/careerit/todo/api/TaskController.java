@@ -1,6 +1,5 @@
 package com.careerit.todo.api;
 
-import com.careerit.todo.domain.Priority;
 import com.careerit.todo.domain.Status;
 import com.careerit.todo.domain.Task;
 import com.careerit.todo.service.TaskService;
@@ -50,8 +49,8 @@ public class TaskController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<List<Task>> searchTasks(@RequestParam(required = false) String title, @RequestParam(required = false) Priority priority, @RequestParam(required = false) Status status) {
-        List<Task> tasks = taskService.search(title, priority, status);
+    public ResponseEntity<List<Task>> searchTasks(@RequestParam(required = false) String title,@RequestParam(value = "flag",defaultValue = "false") boolean flag) {
+        List<Task> tasks = taskService.search(title, flag);
         return ResponseEntity.ok(tasks);
     }
 

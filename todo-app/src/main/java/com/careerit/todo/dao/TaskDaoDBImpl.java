@@ -121,35 +121,37 @@ public class TaskDaoDBImpl implements TaskDao {
         return result;
     }
 
-    private static final String SEARCH_TASKS = """
+    private static final String SEARCH_ON_ACTIVE_TASKS = """
             SELECT id, title, description, due_date, priority, status
             FROM task
-            WHERE (LOWER(title) LIKE LOWER(?) OR ? IS NULL)
-                                                     AND (priority = ?)
-                                                     AND (status = ?)
+            WHERE (LOWER(title) LIKE LOWER(?)) and status != 'ARCHIVED'
+            """;
+
+    private static final String SEARCH_ON_ARCHIVED_TASKS = """
+            SELECT id, title, description, due_date, priority, status
+            FROM task
+            WHERE (LOWER(title) LIKE LOWER(?)) and status = 'ARCHIVED'
             """;
 
     @Override
-    public List<Task> search(String title, Priority priority, Status status) {
-        if(title == null && priority == null && status == null) {
+    public List<Task> search(String title,boolean flag) {
+        if(title == null|| title.isEmpty()){
             return selectActiveTasks();
-        }else{
-            if(title != null) {
+        }else {
+            if (title != null) {
                 title = "%" + title + "%";
             }
-            if(priority != null) {
-                priority = Priority.valueOf(priority.name());
-            }
-            if(status != null) {
-                status = Status.valueOf(status.name());
-            }
+        }
 
-            return jdbcTemplate.query(SEARCH_TASKS,
+        if(flag){
+            return jdbcTemplate.query(SEARCH_ON_ACTIVE_TASKS,
                     TaskQueriesUtil.getTaskRowMapper(),
-                    title,
-                    title,
-                    priority != null ? priority.name() : null,
-                    status != null ? status.name() : null);
+                    title);
+        }else {
+            return jdbcTemplate.query(SEARCH_ON_ARCHIVED_TASKS,
+                    TaskQueriesUtil.getTaskRowMapper(),
+                    title);
+
         }
     }
 
