@@ -15,6 +15,7 @@
         <module>hello-world</module>
         <module>learning-spring-boot</module>
         <module>todo-app</module>
+        <module>learning-spring-data</module>
     </modules>
 
     <properties>
