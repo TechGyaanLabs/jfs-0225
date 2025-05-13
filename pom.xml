@@ -16,6 +16,7 @@
         <module>learning-spring-boot</module>
         <module>todo-app</module>
         <module>learning-spring-data</module>
+        <module>cbook-app</module>
     </modules>
 
     <properties>
