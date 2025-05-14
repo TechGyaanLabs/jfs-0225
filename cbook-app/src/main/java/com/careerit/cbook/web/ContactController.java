@@ -2,14 +2,21 @@ package com.careerit.cbook.web;
 
 import com.careerit.cbook.dto.ContactDto;
 import com.careerit.cbook.service.ContactService;
+import com.careerit.cbook.util.FileType;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/contacts")
+@Slf4j
 public class ContactController {
 
     @Autowired
@@ -44,4 +51,29 @@ public class ContactController {
     public String deleteContact(@PathVariable("id") UUID id) {
         return contactService.deleteContact(id);
     }
+
+    @GetMapping("/download")
+    public void downloadContacts(HttpServletResponse response, @RequestParam("fileType") FileType fileType) {
+        File file = contactService.downloadContacts(fileType);
+        try {
+            // Set the content type and headers
+            response.setContentType("application/json");
+            response.setHeader("Content-Disposition", "attachment; filename=\"" + file.getName() + "\"");
+            response.setContentLength((int) file.length());
+
+            // Send the file to the client
+            try(FileInputStream fis = new FileInputStream(file)) {
+                byte[] buffer = new byte[1024];
+                int bytesRead;
+                while ((bytesRead = fis.read(buffer)) != -1) {
+                    response.getOutputStream().write(buffer, 0, bytesRead);
+                }
+                response.getOutputStream().flush();
+            }
+        } catch (IOException e) {
+            log.error("Error while downloading file", e);
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
+    }
+
 }

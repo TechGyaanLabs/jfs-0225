@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -150,8 +151,12 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public void downloadContacts(FileType fileType) {
-
+    public File downloadContacts(FileType fileType) {
+        FileService fileService = FileServiceFactory.getFileService(fileType);
+        List<Contact> contacts = contactRepo.findAll();
+        File file = fileService.getFile(contacts);
+        log.info("File is downloaded with name {}", file.getName());
+        return file;
     }
 
 
