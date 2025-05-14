@@ -1,5 +1,5 @@
 // API Base URL
-const API_BASE_URL = 'http://localhost:8081/api/v1/contacts';
+const API_BASE_URL = 'https://cbook-be.onrender.com/api/v1/contacts';
 
 // DOM Elements
 const contactsTableBody = document.getElementById('contactsTableBody');
