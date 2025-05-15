@@ -60,6 +60,10 @@ public class ContactController {
     @GetMapping("/download")
     public void downloadContacts(HttpServletResponse response, @RequestParam("fileType") FileType fileType) {
         File file = contactService.downloadContacts(fileType);
+        download(response, file);
+    }
+
+    private static void download(HttpServletResponse response, File file) {
         try {
             // Set the content type and headers
             response.setContentType("application/json");
