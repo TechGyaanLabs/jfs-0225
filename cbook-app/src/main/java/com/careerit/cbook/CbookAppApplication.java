@@ -13,8 +13,8 @@ public class CbookAppApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		String message = "Welcome to Cbook Application";
+		String message = "Cbook Application started successfully";
 		System.out.println(message);
-		System.out.println("This application will help you to manage your contacts");
+		System.out.println("Cbook application will help you to manage your contacts");
 	}
 }
