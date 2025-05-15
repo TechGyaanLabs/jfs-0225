@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -55,11 +54,7 @@ public class ContactController {
 
     @GetMapping("/fileTypes")
     public List<String> getSupportedFileTypes() {
-        List<String> fileTypes = new ArrayList<>();
-        for (FileType fileType : FileType.values()) {
-            fileTypes.add(fileType.name());
-        }
-        return fileTypes;
+        return FileType.getFileTypes();
     }
 
     @GetMapping("/download")
