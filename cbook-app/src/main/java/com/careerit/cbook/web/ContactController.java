@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -50,6 +51,15 @@ public class ContactController {
     @DeleteMapping("/{id}")
     public String deleteContact(@PathVariable("id") UUID id) {
         return contactService.deleteContact(id);
+    }
+
+    @GetMapping("/fileTypes")
+    public List<String> getSupportedFileTypes() {
+        List<String> fileTypes = new ArrayList<>();
+        for (FileType fileType : FileType.values()) {
+            fileTypes.add(fileType.name());
+        }
+        return fileTypes;
     }
 
     @GetMapping("/download")
